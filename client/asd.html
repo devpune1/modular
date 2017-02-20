@@ -1,0 +1,115 @@
+
+    <!doctype html>
+<html>
+    <title>USER FORM</title>
+  <head>
+      <h1 align="center">USER MASTER PASSWORD APPLICATION  </h1>
+    <meta charset="utf-8">
+    <script src="../sampledb/jquery.js"></script>
+    <script src="../sampledb/jquery-ui.js"></script>
+    <script src="../sampledb/jquery-ui.min.js"></script>
+  
+    <script src="../sampledb/jquery-ui.js"></script>
+    
+   <script type="text/javascript" src="../sampledb/ydn.db-is-core-e-cur-dev.js"></script>
+   
+   <script type="text/javascript" src="../sampledb/ydn.db-is-sql.js"></script>
+   <script type="text/javascript" src="../sampledb/jsc/ydn.db-dev.js"></script>
+   <script type="text/javascript" src="../Crypto/rollups/aes.js"></script>
+   <script type="text/javascript" src="../Crypto/rollups/md5.js"></script>
+    <script type="text/javascript" src="../Crypto/rollups/sha1.js"></script>
+
+
+   <script type="text/javascript" src="enct.js"></script>
+  <link rel="stylesheet" type="text/css" href="enct.css">
+  <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+  
+  </head>
+  <body onload= "checkRefresh()">
+      
+
+      
+      
+      
+      
+    <form>
+       
+   
+    
+    
+    <div id="userdetail">
+    
+     <div id="userform">
+    
+  
+    
+   
+     <input type = "text" id = "username" placeholder = "Enter  Name" ></input>
+    
+     <input type = "text" id = "userpassword" placeholder = "Enter Password" ></input>
+    
+     <input type = "text"  id = "userwebsite" placeholder = "Enter Website Name" ></input>
+   
+     <input type = "text" id = "userhint" placeholder = "Enter Hint" ></input>
+    
+    
+     <input type="button"  id="add" onclick="addRecord()"/>
+            
+     <input type="button"  id="get" onclick=" searchUserByDate()"/>
+
+     
+      <input type="button" id="getall" onclick="reloadTable()"/>
+      
+     <input type="button" id="clear"  onclick="dbClear()"></input>    
+      
+      Date <input type="text" id="date" onclick="dates()" ></input>    
+   
+    
+    </div>
+
+
+</div>   
+
+<div>
+
+  <h1> <font size="20"> Results </font> </h1> 
+        
+         <div id="listing"></div>
+    
+    </div>
+    
+    
+      
+        
+ 
+    
+    
+    <div id="usertable">  </div>
+    
+    
+    <div id="editwindow">
+        
+    <div id="editdiv">
+            
+         
+    
+    </div>
+    </div>
+    
+    
+       <div id="searchwindow">
+        
+    <div id="searchdiv">
+            
+         
+    
+    </div>
+    </div>      
+    
+    
+       
+        </form>
+        
+  </body>
+</html>

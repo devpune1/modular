@@ -1,0 +1,55 @@
+
+Using  tomcat :
+
+1.Download project from git server.
+
+2.Save the file folder  to /var/www.
+
+3.Open the index.html file inside web browser.
+
+4.Click to remote login modal.
+
+5.Enter user id and user email address.
+
+6. Click to connect.
+
+7. You will be redirected to login page just refresh your page once.
+
+8. Enter user id and password to login page.
+
+9. Get logged in and perform add ,edit, delete operation.
+
+
+
+Using  remote url :
+
+1.Open link in
+
+ https://preview.c9users.io/devpune1/ydnsampledatabase/sampledb/index.html
+
+
+2.Click to remote login modal.
+
+3.Enter user id and user email address.
+
+4. Click to connect.
+
+5. You will be redirected to login page just refresh your page once.
+
+6. Enter user id and password to login page.
+
+7. Get logged in and perform add ,edit, delete operation.
+
+
+
+Remote storage account :
+
+User id :Ravi5858.
+
+User Password :Ravi2759.
+
+Remote storage email address :
+
+remote user email : devpune13@di.bicnet.info
+
+remote user password:dp1234*

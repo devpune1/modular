@@ -1,0 +1,288 @@
+
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta class = "view" name="viewport" content="width=device-width, initial-scale=0.5">
+
+        <h1 class ="logpage" align="center" > Login Page </h1>
+
+         <script type="text/javascript" src="../crypto.js"></script>
+
+         <script src="../dbobject.js"></script>
+         <script type="text/javascript" src="../ydndbsql.js"></script>
+
+         <link rel="stylesheet" href="login.css" type="text/css"/>
+
+         <script src="../dbobject.js"></script>
+         <link rel="stylesheet" href="login.css" type="text/css"/>
+            <link rel="stylesheet" href="mobileui.css" type="text/css"/>
+       <script src="../jquery.js"></script>
+       <script src="../jquery-ui.js"></script>
+       <script src="../jquery-ui.min.js"></script>
+       <script src="../jquery.simplePagination.js"></script>
+       <script src="../laodtooltip.js"></script>
+       <script src="../tether.min.js"></script>
+       <script src="../bootstrap.min.js"></script>
+
+
+        <script type="text/javascript" src="../sjcl.js"></script>
+
+        <script type="text/javascript" src="../aes.js"></script>
+
+        <script type="text/javascript" src="../sha256.js"></script>
+
+
+        <script type="text/javascript" src="../encryption.js"></script>
+
+        <script type="text/javascript" src="../decryption.js"></script>
+
+
+
+
+
+
+   <link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
+   <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+
+
+
+
+
+
+
+    </head>
+
+      <meta name="viewport" content =" width=device-width, initial-scale=0.5">
+
+
+
+    <body>
+
+
+
+
+            <div class="loginpage"  >
+
+
+                <input  type="text"  class = "loginformdiv blinking-cursor form-control focusedInput"  name="loginformdiv" id="InputName" placeholder="Enter User ID" autofocus />
+
+
+                <input type="password"  class="loginformdiv blinking-cursor form-control focusedInput"  name="loginformdiv" id="InputPassword" placeholder="Enter User Password" />
+
+
+
+                <input  type="button"  id = "login" type="button" class="btn btn-default" onClick = "register(this)" ></input>
+                <input type="button" id="signup" type="button" class="btn btn-default"  onclick="register(this)"></input>
+                <input  type="button"  id = "remotelogin"  class="btn btn-default" onClick ="register(this)" ></input>
+
+
+
+
+     </div>
+
+
+
+    <div id="registrationmodal" class="modal hide fade" tabindex="-1" data-focus-on="input:first">
+
+  <div class="modal-header">
+
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3>Registration Page</h3>
+
+  </div>
+
+  <div class="modal-body">
+
+    <div id = "custalert"class="alert alert-danger hide" >
+      <strong>Error!</strong>   User Id already exits !!
+    </div>
+
+
+
+    <form  class = "form-horizontal" role="form"  autocomplete="off" onsubmit="return false">
+    <div class="form-group">
+
+   <label for="InputName" id="usernamelabel">FullName :</label>
+
+
+
+                        <input type="text" name="InputName" class=" input-large" name="InputName" id="fullname" placeholder="User Name should be more than 5 character and string with space" pattern = "^([a-zA-Z]*((\s)))+[a-zA-Z]*$" title="Please enter string only" required>
+
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                        <span class="input-group-addon">
+                          <span class="glyphicon -">
+                          </span></span>
+
+
+    </div>
+    <div class="form-group">
+                     <label for="InputName" id="useridlabel">User Id :</label>
+
+
+
+                        <input type="text" name="InputName" class=" input-large" name="InputName" id="userid" placeholder="User ID should combination of string and number"  pattern="^[a-zA-Z0-9]+(?:[a-zA-Z0-9]+)*$" title="Please enter string only" required>
+
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+
+
+    </div>
+    <div class="form-group">
+            <label for="InputName"  id="useremaillabel">User Email :</label>
+
+                        <input type="text" name="InputName" class=" input-large" name="InputName" id="email"  placeholder="Email Address must contain be eg:xyz@abc.com"  required >
+
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+
+
+    </div>
+
+    <div class="form-group">
+
+        <label for="mobileno"  id="mobilelabel" class="control-label col-sm-5">Mobile Number :</label> <label for="userdate" id="userdatelabel"  class="control-label col-sm-5">Birth Date :</label>
+     <input type="text" name="InputName" id="mobileno" data-tabindex="2" placeholder="Mobile Number 10-Digit only " pattern="^[978]\d{9}$" required>
+    <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+
+
+    <input type="text" name="InputName" id="userdate" data-tabindex="5"  placeholder="Enter birth date " required>
+
+     <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+
+    </div>
+
+
+      <div class="form-group">
+
+
+
+        <label for="password"  id="userpasswordlabel" class="control-label col-sm-5">Password :</label><label for="confirm" id="userconfirmpasswordlabel"  class="control-label col-sm-5">Confirmation Password :</label>
+
+        <input type="password" name="InputName" id="password" data-tabindex="2"  placeholder="Password more than 8-digit only " pattern="^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?!.*\s).{8,}$" required>
+
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+            <input type="button" id="show" value ="Show"name="button"/>
+        <input type="password" name="InputName"  id="confirm" data-tabindex="5"  placeholder="Password more than 8-digit only " pattern="^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?!.*\s).{8,}$" required>
+
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+        <input type="button" id="showConfirmPassword" value ="Show"name="button"/>
+
+
+
+    </div>
+
+
+  </div>
+
+
+  <div class="modal-footer">
+
+          <input   type = "submit" name="submit" id="save" value="Submit"  onclick="signUp()" class="btn default btn-info pull-right"></input>
+       <input type="button" name="close" id="exit"  value="Close"  onclick="getClear()" class="btn btn-default" />
+  </div>
+
+  </form>
+</div>
+
+
+
+    <div class="modal fade" id ="remoteloginmodal">
+      <div class="modal-dialog" role="dialog">
+         <div  class=" modal-content" tabindex="-1" data-focus-on="input:first">
+
+
+          <div class="modal-header">
+
+            <button type="button" class="close" data-dismiss = "modal" aria-hidden="true">×</button>
+
+            <h3>Remote Login Page</h3>
+
+          </div>
+
+
+
+  <div class="modal-body">
+
+    <form  class = "form-horizontal" autocomplete="off" onsubmit="return false">
+
+
+    <div>
+                     <label for="remoteInputName" id="useridlabel">User Id :</label>
+
+
+
+                        <input type="text" name="remoteInputName" class=" input-large" name="InputName" id="userid" placeholder=" Enter your unique user id "  title="Please enter string only" required>
+
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+
+
+    </div>
+
+    <div>
+            <label for="remoteInputName"  id="useremaillabel">Remote Storage Uri :</label>
+
+                        <input type="email" name="remoteInputName" class=" input-large" name="InputName" id="email"  placeholder=" Enter your remote storage uri address eg : devpune@di.bicnet.info"  required >
+
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+
+
+
+  </div>
+
+  </form>
+
+</div>
+
+  <div class="modal-footer">
+
+       <input   type = "submit" name="submit" id="remoteconnect" value="Connect"  class="btn default btn-info "></input>
+
+       <input type="button" name="close" id="remotedisconnect"  value="Disconnect"   class="btn default btn-info " ></input>
+  </div>
+
+
+
+
+ </div>
+</div>
+</div>
+
+
+<div id="registerform">
+
+
+    </div>
+
+
+    <div class="modal fade" id ="customspinner">
+
+      <div class="modal-dailog">
+        <div class="modal-content">
+
+
+          <div class="modal-body">
+    <div align="center">
+
+
+
+      <img  src="images/spin.gif"  >
+        <h3>Fetching user credentials from remote storage .................wait !!!</h3>
+    </img>
+
+
+          </div>
+
+    </div>
+
+
+        </div>
+      </div>
+    </div>
+</body>
+     <script src="../remoteStorage/remotestorage.js"></script>
+	<script src="../remoteStorage/remotestorage-module.js"></script>
+  	<script src="../remoteStorage/remoteStorageInitilize.js"></script>
+
+
+      <script type="text/javascript" src="../login.js"></script>
+</html>

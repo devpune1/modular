@@ -1,0 +1,961 @@
+
+
+@media only screen  and (min-width:1000px) and (max-width:1200px)  {
+
+
+
+.loginpage{
+
+     width:500px;
+    height:400px;
+ margin-left: 260px;
+
+}
+.loginformdiv{
+
+
+    width: 450px;
+    height: 350px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.loginformdiv input[ type = text]{
+
+
+    width:300px;
+    height:40px;
+   font-size:15px;
+    margin-left: 70px;
+    margin-top: 80px;
+
+}
+
+
+
+.loginformdiv input[ type = password]{
+
+
+    width:300px;
+    height:40px;
+    margin-left: 70px;
+   font-size:15px;
+
+}
+
+.login col-sm-4{
+
+     width:50px;
+    height:50px;
+
+
+}
+  #login{
+       margin-top: 40px;
+        margin-left: 80px;
+      width:100px;
+      height: 40px;
+      background-size: 100px 40px;
+      background-image: url("images/logbutton.png")  no-repeat;
+  }
+
+    #signup{
+
+
+      width:100px;
+      height: 40px;
+       background-image: url("images/sign.png")  no-repeat;
+  background-size: 100px 40px;
+
+
+    }
+
+    #remotelogin{
+
+
+      width:100px;
+      height: 40px;
+       background-image: url("images/sign.png")  no-repeat;
+  background-size: 100px 40px;
+
+
+    }
+
+
+
+
+}
+
+
+
+
+@media only screen  and (min-width:900px) and (max-width:1000px)  {
+
+
+
+.loginpage{
+
+     width:500px;
+    height:500px;
+ margin-left: 180px;
+
+}
+.loginformdiv{
+
+
+    width: 450px;
+    height: 450px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.loginformdiv input[ type = text]{
+
+
+    width:300px;
+    height:50px;
+   font-size:15px;
+    margin-left: 70px;
+    margin-top: 80px;
+
+}
+
+
+
+.loginformdiv input[ type = password]{
+
+
+    width:300px;
+    height:50px;
+    margin-left: 70px;
+   font-size:15px;
+
+}
+
+.login col-sm-4{
+
+     width:50px;
+    height:50px;
+
+
+}
+  #login{
+       margin-top: 40px;
+        margin-left: 100px;
+      width:200px;
+      height: 40px;
+      background-size: 200px 40px;
+      background-image: url("images/logbutton.png")  no-repeat;
+  }
+
+    #signup{
+
+        margin-left: 120px;
+      width:150px;
+      height: 40px;
+       background-image: url("images/sign.png")  no-repeat;
+  background-size: 150px 40px;
+
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen  and (min-width:800px) and (max-width:900px)  {
+
+
+
+.loginpage{
+
+     width:500px;
+    height:500px;
+ margin-left: 180px;
+
+}
+.loginformdiv{
+
+
+    width: 450px;
+    height: 450px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.loginformdiv input[ type = text]{
+
+
+    width:300px;
+    height:50px;
+   font-size:15px;
+    margin-left: 70px;
+    margin-top: 80px;
+
+}
+
+
+
+.loginformdiv input[ type = password]{
+
+
+    width:300px;
+    height:50px;
+    margin-left: 70px;
+   font-size:15px;
+
+}
+
+.login col-sm-4{
+
+     width:50px;
+    height:50px;
+
+
+}
+  #login{
+       margin-top: 40px;
+        margin-left: 100px;
+      width:200px;
+      height: 40px;
+      background-size: 200px 40px;
+      background-image: url("images/logbutton.png")  no-repeat;
+  }
+
+    #signup{
+
+        margin-left: 120px;
+      width:150px;
+      height: 40px;
+       background-image: url("images/sign.png")  no-repeat;
+  background-size: 150px 40px;
+
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media only screen  and (min-width:750px) and (max-width:800px)  {
+
+
+
+.loginpage{
+
+     width:500px;
+    height:500px;
+ margin-left: 120px;
+
+}
+.loginformdiv{
+
+
+    width: 450px;
+    height: 450px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.loginformdiv input[ type = text]{
+
+
+    width:300px;
+    height:50px;
+   font-size:15px;
+    margin-left: 70px;
+    margin-top: 80px;
+
+}
+
+
+
+.loginformdiv input[ type = password]{
+
+
+    width:300px;
+    height:50px;
+    margin-left: 70px;
+   font-size:15px;
+
+}
+
+.login col-sm-4{
+
+     width:50px;
+    height:50px;
+
+
+}
+  #login{
+       margin-top: 40px;
+        margin-left: 100px;
+      width:200px;
+      height: 40px;
+      background-size: 200px 40px;
+      background-image: url("images/logbutton.png")  no-repeat;
+  }
+
+    #signup{
+
+        margin-left: 120px;
+      width:150px;
+      height: 40px;
+       background-image: url("images/sign.png")  no-repeat;
+  background-size: 150px 40px;
+
+
+    }
+
+
+
+
+
+}
+
+
+
+@media only screen  and (min-width:700px) and (max-width:750px)  {
+
+
+
+.loginpage{
+
+     width:500px;
+    height:500px;
+ margin-left: 100px;
+
+}
+.loginformdiv{
+
+
+    width: 450px;
+    height: 450px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.loginformdiv input[ type = text]{
+
+
+    width:300px;
+    height:40px;
+   font-size:15px;
+    margin-left: 70px;
+    margin-top: 80px;
+
+}
+
+
+
+.loginformdiv input[ type = password]{
+
+
+    width:300px;
+    height:40px;
+    margin-left: 70px;
+   font-size:15px;
+
+}
+
+.login col-sm-4{
+
+     width:50px;
+    height:50px;
+
+
+}
+  #login{
+       margin-top: 40px;
+        margin-left: 100px;
+      width:200px;
+      height: 40px;
+      background-size: 200px 40px;
+      background-image: url("images/logbutton.png")  no-repeat;
+  }
+
+    #signup{
+
+        margin-left: 120px;
+      width:150px;
+      height: 40px;
+       background-image: url("images/sign.png")  no-repeat;
+  background-size: 150px 40px;
+
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+@media only screen  and (min-width:600px) and (max-width:700px)  {
+
+
+
+.loginpage{
+
+     width:500px;
+    height:500px;
+ margin-left: 50px;
+
+}
+.loginformdiv{
+
+
+    width: 450px;
+    height: 450px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.loginformdiv input[ type = text]{
+
+
+    width:300px;
+    height:50px;
+   font-size:20;
+    margin-left: 70px;
+    margin-top: 80px;
+
+}
+
+
+
+.loginformdiv input[ type = password]{
+
+
+    width:300px;
+    height:50px;
+    margin-left: 70px;
+    font-size:20;
+
+}
+
+.login col-sm-4{
+
+     width:50px;
+    height:50px;
+
+
+}
+  #login{
+       margin-top: 40px;
+        margin-left: 100px;
+      width:200px;
+      height: 50px;
+      background-size: 200px 50px;
+      background-image: url("images/logbutton.png")  no-repeat;
+  }
+
+    #signup{
+
+        margin-left: 120px;
+      width:150px;
+      height: 50px;
+       background-image: url("images/sign.png")  no-repeat;
+  background-size: 150px 50px;
+
+
+    }
+
+
+
+
+
+}
+
+@media only screen  and (min-width:550px)  and (max-width:600px){
+
+
+
+.loginpage{
+
+     width:350px;
+    height:500px;
+ margin-left: 120px;
+
+}
+.loginformdiv{
+
+
+    width: 300px;
+    height: 450px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.loginformdiv input[ type = text]{
+
+
+    width:200px;
+    height:40px;
+   font-size:15px;
+    margin-left: 40px;
+    margin-top: 80px;
+
+}
+
+
+
+.loginformdiv input[ type = password]{
+
+
+    width:200px;
+    height:40px;
+    margin-left: 40px;
+    font-size:15px;
+
+}
+
+.login col-sm-4{
+
+     width:50px;
+    height:50px;
+
+
+}
+  #login{
+       margin-top: 40px;
+        margin-left: 70px;
+      width:150px;
+      height: 45px;
+      background-size: 200px 45px;
+      background-image: url("images/logbutton.png")  no-repeat;
+  }
+
+    #signup{
+
+        margin-left: 90px;
+      width:100px;
+      height: 40px;
+       background-image: url("images/sign.png")  no-repeat;
+  background-size: 100px 40px;
+
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+@media only screen  and (min-width:500px)  and (max-width:550px){
+
+
+
+.loginpage{
+
+     width:350px;
+    height:500px;
+ margin-left: 55px;
+
+}
+.loginformdiv{
+
+
+    width: 300px;
+    height: 450px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.loginformdiv input[ type = text]{
+
+
+    width:200px;
+    height:40px;
+   font-size:15px;
+    margin-left: 40px;
+    margin-top: 80px;
+
+}
+
+
+
+.loginformdiv input[ type = password]{
+
+
+    width:200px;
+    height:40px;
+    margin-left: 40px;
+    font-size:15px;
+
+}
+
+.login col-sm-4{
+
+     width:50px;
+    height:50px;
+
+
+}
+  #login{
+       margin-top: 40px;
+        margin-left: 70px;
+      width:150px;
+      height: 45px;
+      background-size: 200px 45px;
+      background-image: url("images/logbutton.png")  no-repeat;
+  }
+
+    #signup{
+
+        margin-left: 90px;
+      width:100px;
+      height: 40px;
+       background-image: url("images/sign.png")  no-repeat;
+  background-size: 100px 40px;
+
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+@media only screenand and  (min-width :  450 px)  and  (min-width :  500 px) {
+
+
+
+.loginpage{
+
+     width:400px;
+    height:400px;
+
+
+}
+.loginformdiv{
+
+
+    width: 400px;
+    height: 350px;
+    margin-left: 30px;
+}
+
+.loginformdiv input[ type = text]{
+
+    margin-right: 150px;
+    width:30px;
+    height:50px;
+    font-size:15;
+
+}
+
+
+
+.loginformdiv input[ type = password]{
+
+
+    width:300px;
+    height:50px;
+    font-size:15;
+
+}
+
+.login col-sm-4{
+
+     width:50px;
+    height:50px;
+
+
+}
+  #login{
+
+
+      width:100px;
+      height: 50px;
+  }
+
+
+
+
+}
+
+
+
+
+
+@media only screen and (min-width:400px) and (max-width:450px) {
+
+
+
+.loginpage{
+
+
+    width:350px;
+    height:360px;
+ margin-left:30px;
+
+}
+.loginformdiv{
+
+
+    width: 300px;
+    height: 320px;
+    margin-left: 20px;
+}
+
+.loginformdiv input[ type = text]{
+
+
+    width:200px;
+    height:50px;
+    margin-left: 50px;
+}
+
+
+
+.loginformdiv input[ type = password]{
+
+
+    width:200px;
+    height:50px;
+      margin-left: 50px;
+
+}
+
+.login col-sm-4{
+
+     width:50px;
+    height:50px;
+
+
+}
+  #login{
+
+
+      width:100px;
+      height: 50px;
+      margin-left: 50px
+  }
+
+
+    #signup{
+
+
+      width:100px;
+      height: 50px;
+      margin-left: 5px
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-width:450px) and (max-width:500px) {
+
+
+
+.loginpage{
+
+
+    width:350px;
+    height:360px;
+ margin-left:60px;
+
+}
+.loginformdiv{
+
+
+    width: 300px;
+    height: 320px;
+    margin-left: 20px;
+}
+
+.loginformdiv input[ type = text]{
+
+
+    width:200px;
+    height:50px;
+    margin-left: 50px;
+}
+
+
+
+.loginformdiv input[ type = password]{
+
+
+    width:200px;
+    height:50px;
+      margin-left: 50px;
+
+}
+
+.login col-sm-4{
+
+     width:50px;
+    height:50px;
+
+
+}
+  #login{
+
+
+      width:100px;
+      height: 50px;
+      margin-left: 50px
+  }
+
+
+    #signup{
+
+
+      width:100px;
+      height: 50px;
+      margin-left: 5px
+  }
+
+
+
+
+
+
+
+
+}
+@media only screen and (min-width:300px) and (max-width:400px){
+
+
+
+.loginpage{
+
+     width:300px;
+    height:400px;
+
+
+}
+.loginformdiv{
+
+
+    width: 240px;
+    height: 350px;
+
+    margin-top: 20px;
+     margin-left: 30px;
+}
+
+.loginformdiv input[ type = text]{
+
+
+    width:500px;
+    height:40px;
+    margin-left: 20px;
+}
+
+
+
+.loginformdiv input[ type = password]{
+
+
+    width:200px;
+    height:40px;
+      margin-left: 20px;
+
+}
+
+.login col-sm-4{
+
+     width:50px;
+    height:50px;
+
+
+}
+  #login{
+
+
+      width:100px;
+      height: 50px;
+      margin-left: 5px;
+
+  }
+
+
+    #signup{
+
+
+      width:100px;
+      height: 50px;
+      margin-left: 5px
+  }
+
+
+
+
+
+
+  #registerform{
+
+
+      width: 100pc;
+      height:100pc;
+
+
+  }
+
+
+  #subreg{
+
+       width: 100px;
+      height:100px;
+      left:20px;
+  }
+
+
+
+
+
+
+}

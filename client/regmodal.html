@@ -1,0 +1,102 @@
+<!-- Button trigger modal -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      
+    function getTextBoxData(windowId){
+    
+ var userData = [];
+ 
+ var getTextBoxObj = {}; 
+ 
+ var items = 0;   
+  
+
+   
+            getTextBoxObj = document.getElementsByName(windowId);
+      
+            
+    for( items = 0 ; items < getTextBoxObj.length ; items++ ){
+        
+
+    
+        
+        userData[items] = getTextBoxObj[items].value;
+        
+       
+    }
+ 
+  console.log(userData)
+    
+   
+
+ 
+  
+}
+      
+      
+      
+      
+    </script>
+    
+    
+    
+  </head>
+  <bod>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+ Register
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+              
+                 <div class="col-sm-4" ><input class ="regform" name = "regform" type ="text" data-toggle = "tooltip" title = "Enter Name Here " placeholder = "Enter Name Here"/></input></div>
+
+                
+              <div class="col-sm-4" > <input   class ="regform" name ="regform" type = "password" data-toggle = "tooltip" title = "Enter User ID Here " placeholder = "Enter User ID Here"/></div>
+             <div class="col-sm-4" ><input   class ="regform" name ="regform" type ="text" data-toggle = "tooltip" title = "Enter Mobile Number Here " placeholder = "Enter Mobile Number Here"/></input></div>
+
+                
+              <div class="col-sm-4" > <input   class ="regform" name ="regform" type = "password" data-toggle = "tooltip" title = "Enter Email Address  Here" placeholder = "Enter Email Address  Here"/></div>
+               <div class="col-sm-4" ><input  class ="regform"name ="regform" type ="date" data-toggle = "tooltip" title = "Enter Date Here " placeholder = "Enter Date Here"/></input></div>
+
+                
+              <div class="col-sm-4" > <input  class ="regform"name ="regform" type = "password" data-toggle = "tooltip" title = "Enter Password Here " placeholder = "Enter Password Here"/></div>
+
+           
+           
+           
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick=" getTextBoxData('regform')">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <script src="../sampledb/jquery.js"></script>
+   <script src="../sampledb/jquery-ui.js"></script>
+   <script src="../sampledb/jquery-ui.min.js"></script>
+   <script src="../sampledb/jquery.simplePagination.js"></script>
+   <script src="../sampledb/laodtooltip.js"></script>
+   <script src="../sampledb/tether.min.js"></script>
+   <script src="../sampledb/bootstrap.min.js"></script>
+
+   
+   <link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
+   <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+   <link rel="stylesheet" type="text/css" href="mobileui.css"> 
+  
+  </bod>
+</html>
+
+

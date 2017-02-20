@@ -1,0 +1,736 @@
+
+
+* { margin: 0; padding: 0px; }
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+
+
+  #add{
+
+    width:90px;
+     height:50px;
+     margin-top:40px;
+      margin-left:310px;
+    
+    background: url('images/add.png')  center no-repeat white;
+}
+
+
+
+  #get{
+
+   width:90px;
+    height:50px;
+   margin-top:-50px;
+       margin-left:410px;
+     display:block;
+  background: url('images/search.png')  center no-repeat white;
+}
+
+  #getall{
+
+   width:90px;
+    height:50px;
+   margin-top:-50px;
+      margin-left:510px;
+     display:block;
+ background: url('images/view.png')  center no-repeat white;
+}
+
+ #clear{
+
+   width:90px;
+    height:50px;
+   margin-top:-50px;
+       margin-left:610px;
+     display:block;
+ background: url('images/delete.png')  center no-repeat white;
+}
+
+ #setting{
+
+
+
+
+
+    width:90px;
+    height:50px;
+    margin-top:-50px;
+     margin-left:710px;
+    display : block;
+     background: url('images/settings.png')  center no-repeat white;
+   }
+
+ #settingid{
+
+
+    width:90px;
+    height:50px;
+    margin-top:-50px;
+    margin-left:610px;
+   
+     background: url('images/settings.png')  center no-repeat white;
+
+   }
+
+#editpage{
+
+
+
+position :absolute;
+  margin-top:5px;
+  margin-left:170px;
+
+}
+
+#namelabel{
+
+
+
+position :absolute;
+  margin-top:50px;
+  margin-left:10px;
+
+}
+
+#passwordlabel{
+
+
+
+position :absolute;
+  margin-top:120px;
+  margin-left:-325px;
+
+}
+#websitelabel{
+
+
+
+position :absolute;
+  margin-top:100px;
+  margin-left:-325px;
+
+}
+
+#hintlabel{
+
+
+
+position :absolute;
+   margin-top:100px;
+  margin-left:-325px;
+
+
+}
+
+#box{
+ 
+ margin-top:20px;
+ 
+ 
+}
+
+#username{
+
+
+      width:50%;
+    height:30px;
+  margin-top:10px;
+  margin-left:150px;
+
+}
+
+#userpassword{
+
+          width:50%;
+    height:30px;
+    margin-top:10px;
+    margin-left:150px;
+
+}
+
+#userwebsite{
+
+             width:50%;
+    height:30px;
+     margin-top:10px;
+   margin-left:150px;
+
+}
+
+
+#userhint{
+
+         width:50%;
+    height:30px;
+    margin-top:10px;
+    margin-left:150px;
+
+}
+
+
+
+.ui-datepicker {
+
+ font-size : 15 px;
+
+ background: white;
+ border: 1px solid #555;
+ color: black;
+
+}
+
+
+
+
+.checkbox{
+	width : 1.5em;
+	height :1.5em;
+
+margin-left: 50px;
+	padding: 0px;
+	margin: 0px;
+
+
+	}
+
+
+#right{
+
+  width:100%;
+ height: 150px;
+background:lightblue;
+ border: 2px  solid lightgrey;
+
+
+ display: block;
+}
+
+
+
+#name{
+
+    width:50%;
+    height:30px;
+  margin-top:10px;
+  margin-left:120px;
+
+}
+
+#password{
+
+    width:50%;
+    height:30px;
+  margin-top:10px;
+  margin-left:120px;
+
+
+}
+
+#website{
+
+     width:50%;
+    height:30px;
+  margin-top:10px;
+  margin-left:120px;
+
+}
+
+
+#hint{
+
+     width:50%;
+    height:30px;
+  margin-top:10px;
+  margin-left:120px;
+
+}
+
+#save{
+    display :block;
+   width:90px;
+    height:40px;
+   margin-top:0px;
+   margin-left:120px;
+    background: url('images/save.png')  center no-repeat white;
+
+}
+#cancel{
+
+
+    width:90px;
+    height:40px;
+    margin-top:-60px;
+   margin-left:250px;
+     background: url('images/cancel.png')  center no-repeat white;
+}
+#search{
+
+   width:90px;
+    height:40px;
+   margin-top:40px;
+   margin-left:120px;
+   background: url('images/search.png')  center no-repeat white;
+}
+
+
+
+
+#subform{
+
+
+ top : 100px;
+}
+
+
+#cancel : hover{
+
+ background-color: lightgrey;
+}
+
+
+#add : hover{
+
+ background-color: lightgrey;
+}
+
+
+#get: hover{
+
+ background-color: lightgrey;
+}
+
+
+#getAll : hover{
+
+ background-color: grey;
+}
+
+
+
+ #deletebutton{
+
+      width: 30px;
+      height:30px;
+       background-Image: url('images/remove.png') ;
+      	background-size: 30px 30px;
+  }
+   #editbutton{
+
+    width: 30px;
+      height:30px;
+        background-Image: url('images/edit.png') ;
+      	background-size: 30px 30px;
+  }
+
+
+#box{
+
+   border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: rgba(200, 200, 200, 0.1);
+    border-radius: 4px;
+    top:50px;
+ 
+ }
+
+
+
+      #userform{
+
+    width:510px;
+    height:400px;
+    background-color: lightblue;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:40px;
+    font-family: Arial;
+    font-size: 25px ;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
+
+
+   ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px;
+    text-decoration: none;
+}
+
+
+
+   #usertable{
+
+     margin-bottom: 200px;
+
+
+   }
+
+
+ table{
+
+	 table-layout: fixed;
+    border-collapse: collapse;
+
+     width: 100%;
+
+     padding : 8px;
+     text-align: left;
+     border-style:solid;
+
+      margin-right: 100px;
+       margin-left: 0px;
+
+
+
+      font-family: Arial;
+      overflow:hidden;
+}
+
+
+#startdate{
+
+ width : 200px;
+ height : 40px;
+  margin-left: 100px;
+
+
+
+}
+
+
+#enddate{
+
+ width : 200px;
+ height : 40px;
+
+  margin-left: 200px;
+
+
+
+}
+
+ tr:hover {background-color: #ddd}
+
+
+
+
+ td{
+
+
+    width:0px;
+    border: 1px solid  #ddd;
+    word-wrap: break-word;
+    font-family: Arial;
+
+    font-size: 25px ;
+    font-style: normal;
+    	font-variant: normal;
+	     font-weight: normal;
+
+   padding: 2px;
+    white-space : nowrap;
+    text-align:left;
+
+}
+  #headertable th{
+
+
+     width:0px;
+    border: 1px solid  #ddd ;
+
+    font-family: Arial;
+
+    font-size: 25px ;
+    font-style: normal;
+
+    padding: 2px;
+    white-space : nowrap;
+    text-align:left;
+
+    background-color: lightblue;
+    color: black;
+
+}
+
+
+
+ #editwindow{
+
+           width:100%;
+           height:100%;
+           opacity:.95;
+            top:20px;
+            left:10px;
+            display:none;
+            position:fixed;
+            background-color:grey;
+            overflow:auto
+ }
+
+
+  #editdiv{
+
+          position:absolute;
+           left:50%;
+           top:17%;
+           margin-left:-202px;
+
+
+           border-style :solid;
+           border-width :5px;
+           background-color:lightblue;
+           width :400px;
+           height:400px;
+
+            font-family: Arial;
+            font-size: 17px ;
+	        font-style: normal;
+	        font-variant: normal;
+	        font-weight: 500;
+
+
+  }
+
+
+ #searchwindow{
+
+           width:100%;
+           height:100%;
+           opacity:.95;
+            top:0;
+            left:0;
+            display:none;
+            position:fixed;
+            background-color:grey;
+            overflow:auto
+ }
+
+
+  #searchdiv{
+
+          position:absolute;
+           left:60%;
+           top:17%;
+           margin-left:-202px;
+
+
+           border-style :solid;
+           border-width :5px;
+           background-color:#9933FF;
+           width :400px;
+           height:400px;
+
+  }
+
+
+
+
+input[type='checkbox'] {
+
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+}
+
+#demo{
+
+               color: black;
+                font-weight: bold;
+                text-decoration: underline;
+                cursor: pointer;
+                display: inline;
+                width:20px;
+                height: 20px;
+                margin-left:20px;
+                 background-color: white;
+}
+
+#pagingbutton:hover {
+
+ background-color: lightblue;
+
+}
+
+
+
+
+   #userrightname{
+       position: relative;
+       margin-left:1070px;
+      font-size: 20px;
+
+
+   }
+
+
+
+#usericon{
+
+     width:100px;
+    height:80px;
+    margin-left:1150px;
+     background: url('images/usericon.png') center no-repeat white;
+    background-repeat: no-repeat ;
+   background-size:100px 80px;
+   padding : 50px;
+
+}
+
+#settings{
+
+     background: url('images/setting.png') center no-repeat white ;
+}
+
+#status{
+	margin-top:0px;
+	 margin-left:10px;
+
+
+}
+
+#offline{
+	width:90px;
+	height:50px;
+	margin-top:20px;
+	 margin-left:10px;
+	 display:block;
+     background: url('images/offline.png') center no-repeat white ;
+
+}
+
+#online{
+
+	width:90px;
+	height:50px;
+	margin-top:20px;
+	 margin-left:0px;
+	 display:block;
+     background: url('images/online.png') center no-repeat white ;
+
+
+}
+
+#logout{
+
+
+     background: url('images/logout.png') center no-repeat white;
+}
+
+
+#sort {
+
+ width : 60px;
+ height:  20px;
+ margin-left : 80%;
+ top : 220px;
+ display: block;
+
+}
+
+
+
+
+#example{
+
+ background: url("images/sort_both.png") no-repeat center right;
+ background: url("images/sort_asc.png") no-repeat center right;
+ background: url("images/sort_desc.png") no-repeat center right;
+
+}
+
+td.details-control {
+    background: url('images/logout.png') no-repeat center center;
+    cursor: pointer;
+}
+
+
+
+tr.details td.details-control {
+    background: url('images/logout.png') no-repeat center center;
+}
+
+
+
+
+
+
+
+
+
+#remotestorage-widget {
+
+   top    : auto !important;
+    right  : 15px !important;
+    bottom : 80px !important;
+
+
+
+
+}
+
+ .remotestorage-state-connected {
+        bottom: 40px !important;
+    }
+    
+    
+.panel {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.panel-body {
+  padding: 15px;
+}
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid black;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+.panel-title > a {
+  color: inherit;
+}
+.panel-footer {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #dddddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+

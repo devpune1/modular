@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test for IndexedDB auto schema</title>
+</head>
+<body>
+
+    <script src="../../../closure-library/closure/goog/base.js"></script>
+    <script src="../../../closure-library/closure/goog/deps.js"></script>
+    <script src="../../../ydn-base/src/deps.js"></script>
+    <script src="../../src/deps.js"></script>
+
+    <script>
+        window.options = {mechanisms: ['indexeddb']};
+        goog.require('ydn.db.con.SchemaTest');
+    </script>
+    <script src="../../src/ydn/db/tr/inject.js"></script>
+    <script src="../../src/ydn/db/tr/event_installer.js"></script>
+    <script src="../../src/ydn/db/crud/inject.js"></script>
+</body>
+</html>

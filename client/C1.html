@@ -1,0 +1,146 @@
+
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Crypto module example</title>
+  <script src="../sampledb/ydn.db-isw-core-crypt-qry-dev.js"></script>
+  
+   <script type="text/javascript" src="../sampledb/s.js"></script>
+   <script type="text/javascript" src="../sampledb/jsc/ydn.db-dev.js"></script>
+</head>
+<body>
+<h3>Using crypto module</h3>
+
+<input type="text" id="name"/>
+<input type="text" id="number"/>
+<input type="text" id="password"/>
+
+<br>
+<br>
+<input type="button" value ="submit" onclick="addRecord()" id="submit"/>
+<input type="button" value="cancle" id="cancel"/>
+
+
+
+<script>
+  var schema = {
+    stores: [{
+      name: 'table',
+     
+    }]
+  };
+  var options = {
+    method: 'rc4',
+    exposeKey: true,
+    secrets: [{
+      name: 'aaaa',
+      key: 'aYHF6vfuGHpfWS*eRLrPQxZjSó~É5c6HjCscqDqRtZasp¡JWSMGaW'
+    }]
+  };
+  var cipher = new ydn.crypto.Cipher(options);
+  
+  var db = new ydn.db.Storage('crypto-demo', schema);
+/*
+  db.put('store', messages.map(function(msg) {
+    return cipher.encrypt(msg);
+  })).done(function(keys) {
+    console.log(keys);
+    db.values('store', keys).done(function(packages) {
+      return packages.map(function(obj) {
+        return cipher.decrypt(obj);
+      });
+    }).done(function(objs) {
+      console.log('query by keys', objs);
+    });
+  });
+
+  db.values('store').done(function(packages) {
+    return packages.map(function(obj) {
+      console.log(obj);
+      return cipher.decrypt(obj);
+    });
+  }).done(function(msgs) {
+    console.log('all decrypted messages', msgs);
+  });
+  
+  */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  function addRecord() {
+    
+    
+    var name = document.getElementById('name').value;
+    var number = document.getElementById('number').value;
+    var password = document.getElementById('password').value;
+    
+    
+    
+    var ob={
+      
+      'name':name,
+      'mobile':number,
+      'key':password
+      
+    
+    };
+  val=JSON.stringify(ob)
+    
+    var package = cipher.encrypt({val, password});
+    
+    db.put('table', package, password);
+    
+    /*
+    db.put('store', messages.map(function(ob) {
+    return cipher.encrypt();
+  })).done(function(keys) {
+    console.log(keys);
+    db.values('store', keys).done(function(packages) {
+      return packages.map(function(ob) {
+        return cipher.decrypt(ob);
+      });
+    }).done(function(objs) {
+      console.log('query by keys', ob);
+    });
+*/
+    var original = cipher.decrypt(package,password);
+   
+
+   
+   //values = JSON.parse(original);
+   
+   
+   
+    
+    
+    
+  
+    
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</script>
+   <script type="text/javascript" src="../sampledb/jsc/ydn.db-dev.js"></script>
+</body>
+</html>

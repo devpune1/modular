@@ -1,0 +1,110 @@
+<html>
+<head>
+  <style>
+
+
+
+#username{
+  margin-top:10px;
+  margin-left:50px;
+  
+}
+
+#usernumber{
+  
+  margin-left:50px;
+  
+}
+
+#useremail{
+  
+  margin-left:50px;
+  
+}
+
+
+
+
+ #userdetail{
+   
+   background-color:#6600CC;
+   border :3px solid #6600CC;
+  width:300px;
+  height:210px;
+  margin-left:400px; 
+  margin-top:100px;
+   
+ } 
+  
+  
+#records {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+   margin-left:0px;
+    border-right:60px;
+}
+
+#records td, #customers th {
+    border: 2px solid black;
+    text-align: center;
+    padding: 8px;
+    margin-left:450px;
+}
+
+#records tr:nth-child(even){background-color:lightblue}
+
+#records tr:hover {background-color: lightblue;}
+
+#records th {
+	
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color:white;
+    color: black;
+    border-collapse: collapse;
+  
+    
+    
+}
+
+    body {
+      color: #222;
+      font: 14px Arial;
+    }
+
+    body a {
+      color: #3D5C9D;
+      text-decoration: none;
+    }
+   
+        
+    
+  </style>
+  <script type="text/javascript" src="../sampledb/jsc/ydn.db-dev.js"></script>
+
+</head>
+<body>
+<div id="userdetail">
+
+<input type="text" id="username" name="todo" placeholder="Enter Name Here" style="width: 200px; height:40px;" /><br><br>
+<input type="text" id="usernumber" name="todo" placeholder="Enter Mobile Here" style="width: 200px;  height:40px;" /> <br><br>
+<input type="text" id="useremail" name="todo" placeholder="Enter Email Here" style="width: 200px;  height:40px;" />
+
+<br><br>
+
+<script type="text/javascript" src="sam.js"></script>
+
+<input type="submit" value="ADD USER " onclick="addUser()" />
+<input type="submit" value="VIEW USER"  onclick=" viewUserRecords()" />
+<input type="submit" value="SEARCH" onclick="searchRecords()" />
+
+
+<br><br>
+
+</div>
+
+<table id="recordtable"></table>
+<div id="recordtabledemo"></div>
+</body>
+</html>
