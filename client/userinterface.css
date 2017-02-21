@@ -74,6 +74,15 @@
 
 
 @media  screen and (max-width:500px){
+
+
+#settingmodal .modal-body {
+
+    width:300px;
+    height: 300px;
+    
+}
+
   #deletebutton{
 
       width: 30px;

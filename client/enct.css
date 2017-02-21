@@ -30,7 +30,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
      height:50px;
      margin-top:40px;
       margin-left:310px;
-    
+
     background: url('images/add.png')  center no-repeat white;
 }
 
@@ -87,7 +87,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     height:50px;
     margin-top:-50px;
     margin-left:610px;
-   
+
      background: url('images/settings.png')  center no-repeat white;
 
    }
@@ -143,10 +143,10 @@ position :absolute;
 }
 
 #box{
- 
+
  margin-top:20px;
- 
- 
+
+
 }
 
 #username{
@@ -350,7 +350,7 @@ background:lightblue;
     background: rgba(200, 200, 200, 0.1);
     border-radius: 4px;
     top:50px;
- 
+
  }
 
 
@@ -547,15 +547,15 @@ background:lightblue;
 
 
 
-input[type='checkbox'] {
+	td {
+	    width: 100%;
+	    background: #EEE;
+	}
+	input[type=checkbox] {
 
-    width:20px;
-    height:20px;
-    background:white;
-    border-radius:5px;
-    border:2px solid #555;
-}
 
+	    display: table;
+	}
 #demo{
 
                color: black;
@@ -588,15 +588,12 @@ input[type='checkbox'] {
 
 
 
-#usericon{
+.usericon{
 
-     width:100px;
-    height:80px;
-    margin-left:1150px;
-     background: url('images/usericon.png') center no-repeat white;
-    background-repeat: no-repeat ;
-   background-size:100px 80px;
-   padding : 50px;
+     width:20px;
+    height:20px;
+     background: url('images/usericon.png') center no-repeat;
+   padding : 15px;
 
 }
 
@@ -695,8 +692,8 @@ tr.details td.details-control {
  .remotestorage-state-connected {
         bottom: 40px !important;
     }
-    
-    
+
+
 .panel {
   margin-bottom: 20px;
   background-color: #ffffff;
@@ -733,4 +730,3 @@ tr.details td.details-control {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-

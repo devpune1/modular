@@ -3485,9 +3485,9 @@ document.getElementById("usertable").innerHTML="";
 
     function userSetting(){
 
+    $('#settingmodal').modal('show');
 
-
-         userSettingWindow();
+        // userSettingWindow();
 
 
 
@@ -5914,7 +5914,7 @@ function setUserProfile(){
       var uniqueKey = sessionStorage.getItem('recordKey') ;
 
 
-        document.getElementById('right').innerHTML = "";
+      //  document.getElementById('right').innerHTML = "";
 
 
     var db = getUserInfoDatabaseObject();
@@ -5967,11 +5967,12 @@ function setUserProfile(){
 
 
 function setRightDiv(userName){
-
+    console.log(")______")
     console.log(userName)
 
+    document.getElementById('userfullname').innerText = userName ;
 
-
+/*
     var items = 0;
 
     var setObj = document.getElementById('right');
@@ -5992,7 +5993,7 @@ function setRightDiv(userName){
 
    setObj.appendChild(setUserFullName(userName,rightDiv));
 
-
+*/
 
 }
 
@@ -6040,7 +6041,7 @@ function setUserFullName(userInfo,rightDiv){
 
 
          leftDiv.innerHTML = "";
-         addDropDownList( leftDiv);
+        // addDropDownList( leftDiv);
 
 
 
@@ -6300,7 +6301,7 @@ $('#updateprofile').modal('show');
 
       };
 
-
+      setRightDiv(userProfileData.fullname)
 
       // Encrypt user data.
       console.log(userProfileData);
@@ -6654,11 +6655,19 @@ function setUserHashKey(){
         });
 }
 setUserHashKey();
+
+/**
+* This function update user password and also aplly password to user profile and user records.
+*This function after applying password update local storage and remote storage.
+*/
+
+
+
 function updatePassword(){
 
+
+  // Display Modal
 $('#updatepassword').modal('show');
-
-
 
 
 
@@ -6746,7 +6755,7 @@ var userPassword = {
 
 }
 
-
+/*
 function addDropDownList(select){
 
 
@@ -6784,7 +6793,6 @@ select.onclick = function(){
 }
 
 
-
 function callSelectedOption(choice){
 
 
@@ -6814,11 +6822,6 @@ function callSelectedOption(choice){
 
          alert("Successfully Logged Out ");
 
-        sessionStorage.setItem("databaseName","");
-         sessionStorage.setItem("userKey","");
-          sessionStorage.setItem("recordKey","");
-             window.location.href ="../index.html";
-
 
 
 
@@ -6833,45 +6836,44 @@ function callSelectedOption(choice){
 
 
 }
+*/
+/**
+* This logout function clear session storage,close database connection and also redirect to login page.
+*
+*
+*/
+
+function logoutUser() {
+
+            // Display alert regarding logout.
+
+           alert("Successfully Logged Out ");
+
+           // Clear session storage.
+
+           // Clear database name.
+
+          sessionStorage.setItem("databaseName","");
+
+          // Clear user password.
+
+          sessionStorage.setItem("userKey","");
+
+          // Clear user unique record key.
+
+          sessionStorage.setItem("recordKey","");
+
+          // Redirect to login page.
+
+         window.location.href ="../index.html";
 
 
- function encryptUserData(userProperty,userData,userKey){
+}
 
 
 
 
 
-
-     var items = 0;
-   var userDataObject = {};
-
-
-
-
-
-      for(items = 0; items < userProperty.length; items++){
-
-
-
-
-
-                     userDataObject[userProperty[items]] = encryptData(userData[userProperty[items]],userKey);
-
-
-    }
-
-
-
-
-
-
-  return userDataObject;
-
-
-
-
-
- }
 
 
 
@@ -7516,6 +7518,10 @@ console.log("here")
   document.getElementById('getall').onclick = getRecord ;
   document.getElementById('setting').onclick = userSetting ;
   document.getElementById('clear').onclick = dbClear ;
+  document.getElementById('linkprofile').onclick = updateProfile ;
+  document.getElementById('linkpassword').onclick = updatePassword ;
+  document.getElementById('linklogout').onclick = logoutUser ;
+
 
 
 /*

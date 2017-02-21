@@ -84,20 +84,68 @@
 
 
 
-
-  <!--      <div id="connection">
-           <input type="button" id="offline" ></input>
-
-           <input type="button" id="online" ></input>
-       </div>
--->
-
 <div class="container-fluid">
+
   <div class="page-header" style="background-color : lightgrey">
 
-      <div  class="dropdown " id = "right"></div>
+      <!--<div  class="dropdown " id = "right"></div>-->
+
+
+<nav  role="navigation" class="navbar navbar-default" style="height:80px ">
+
+<div class=" row-fluid">
+
+<div class="row" style="marginTop:10px">
+  <label class="pull-right" id="userfullname"></label>
+
+</div>
+<div class="row">
+
+  <div class="col-md-12">
+
+      <img class="pull-right usericon" />
 
   </div>
+</div>
+<div class="row">
+
+  <div class="col-md-12">
+
+
+        <div class="dropdown pull-right">
+
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" >
+            Settings
+   <span class="caret"></span>
+ </button>
+
+ <ul class="dropdown-menu " aria-labelledby="dropdownMenu1">
+
+   <li id="linkprofile" class="list-group-item"> <label class="text-center glyphicon glyphicon-user" >Update Profile</label></li>
+
+    <li role="separator" class="divider"></li>
+
+   <li id=  "linkpassword" class="list-group-item"><label class="text-center glyphicon glyphicon-user">Update Password</label> </li>
+
+     <li role="separator" class="divider"></li>
+
+   <li id="linklogout" class="list-group-item">  <label  class = "text-center glyphicon glyphicon-use">Logout</label> </li>
+
+
+ </ul>
+
+  </div>
+
+</div>
+
+</div>
+
+</nav>
+
+</div>
+
+<div class="container-fluid">
+
 
      <div class="row-fluid" >
 
@@ -542,6 +590,7 @@
     </div>
 </div>
 </div>
+
 <!------------------ Update profile modal-footer------------------------------------------------------>
 
 
@@ -670,8 +719,9 @@
   </div>
 </div>
 
-<!*********************Creating  modal for settin button on main module .******************** -->
-<div class="modal fade" id ="settings">
+<!--------------------------------Creating  modal for settin button on main module .------------------>
+
+<div class="modal fade" id ="settingmodal">
 
   <div class="modal-dailog">
     <div class="modal-content">
@@ -680,6 +730,108 @@
       </div>
 
       <div class="modal-body">
+
+<div class="container-fluid">
+
+<div class="row">
+
+<div class="col-md-12">
+
+
+<table class="table">
+  <tr>
+
+    <td> </td>
+
+      <td> Display</td>
+
+      <td>
+
+        Mandatory
+      </td>
+
+    <td>
+      Encryption
+    </td>
+  </tr>
+<tr>
+  <td>
+    Name
+    <td class="text-center">
+    <input type="checkbox" name="name" value="">
+    </td>
+
+      <td class="text-center">
+    <input type="checkbox" name="name" value="">
+    </td>
+
+      <td class="text-center">
+    <input type="checkbox" name="name" value="">
+    </td>
+
+  </td>
+
+</tr>
+
+<tr>
+
+  <td>
+    Password
+    <td class="text-center">
+    <input type="checkbox" name="name" value="">
+    </td>
+
+    <td class="text-center">
+    <input type="checkbox" name="name" value="">
+    </td>
+
+    <td class="text-center">
+    <input type="checkbox" name="name" value="">
+    </td>
+
+  </td>
+</tr>
+
+<tr>
+
+  <td>
+    Website
+    <td class="text-center">
+    <input type="checkbox" name="name" value="">
+    </td>
+    <td class="text-center">
+    <input type="checkbox" name="name" value="">
+    </td>
+    <td class="text-center">
+    <input type="checkbox" name="name" value="">
+    </td>
+  </td>
+</tr>
+
+
+<tr>
+
+  <td>
+    Hint
+    <td class="text-center">
+    <input type="checkbox" name="name" value="">
+    </td>
+    <td class="text-center">
+    <input type="checkbox" name="name" value="">
+    </td>
+    <td class="text-center">
+    <input type="checkbox" name="name" value="">
+    </td>
+  </td>
+
+</tr>
+
+</table>
+
+
+</div>
+</div>
+</div>
 
       </div>
 
@@ -691,7 +843,9 @@
     </div>
   </div>
 </div>
-<!**************************Custom spinner******************************-->
+
+<!-----------------------------------------------Custom spinner.------------------------------->
+
 <div class="modal fade" id ="spinner">
 
   <div class="modal-dailog">
@@ -717,6 +871,8 @@
   </div>
 </div>
 
+
+<!-----------------Creating modal for setting buttom-------------------->
 
 
   </body>
