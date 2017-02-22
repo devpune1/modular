@@ -78,9 +78,28 @@
 
 #settingmodal .modal-body {
 
+
+
+
+
     width:300px;
     height: 300px;
-    
+
+}
+
+#settingtable  td {
+
+    width:10px;
+
+
+
+}
+#settingtable  tr {
+
+    width:50px;
+
+
+
 }
 
   #deletebutton{

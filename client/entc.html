@@ -22,14 +22,7 @@
    <script type="text/javascript" src="../ydn.db-is-sql.js"></script>
    <script type="text/javascript" src="../jsc/ydn.db-dev.js"></script>
 
-    <script type="text/javascript" src="../jquery.tablesorter.js"></script>
 
-
- <script type="text/javascript" src="../jquery.dataTables.min.js"></script>
-
-
-   <link rel="stylesheet" type="text/css" href="jquery.dataTables.min.css">
-   <link rel="stylesheet" type="text/css" href="dataTables.jqueryui.css">
 
  <script type="text/javascript" src="../sjcl.js"></script>
 
@@ -66,9 +59,6 @@
    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
   <link rel="stylesheet" type="text/css" href="userinterface.css">
-
-
-   <link rel="stylesheet" type="text/css" href="responsive.dataTables.min.css">
 
 
   </head>
@@ -177,7 +167,7 @@
 
   <div class="form-group">
      <div class="input-group">
-    <label for="userpassword" class="col-sm-2 control-label">User Password </label>
+    <label for="userpassword" class=" sr-only col-sm-2 control-label">User Password </label>
     <input type="text" class="form-control col-sm-12" id="userpassword" placeholder="Enter password here">
 
    </div>
@@ -257,7 +247,7 @@
 
 
 
-<table id="example" class= "table table-inverse " width="100%">
+<table id="example" class= "table table-reponsive " width="100%">
     <tbody id="tbodyid">
     <thead>
             <tr>
@@ -278,7 +268,7 @@
 
 
 
-     <div id="usertable"  class="table-responsive" >  </div>
+<div id="usertable"  class="table-responsive" >  </div>
 
 
 
@@ -732,14 +722,9 @@
 
       <div class="modal-body">
 
-<div class="container-fluid">
-
-<div class="row">
-
-<div class="col-sm-12">
 
 
-<table class="table  table-responsive">
+<table class = "table  table-responsive" id="usersettingtable">
   <tr>
 
     <td> </td>
@@ -747,13 +732,13 @@
       <td> Display</td>
 
       <td>
-
         Mandatory
-      </td>
+        </td>
 
     <td>
       Encryption
     </td>
+
   </tr>
 <tr>
   <td>
@@ -830,15 +815,13 @@
 </table>
 
 
-</div>
-</div>
-</div>
+
 
       </div>
 
       <div class="modal-footer">
-        <button class="btn" name="button">Save </button>
-        <button class="btn" name="button">Close</button>
+        <button class="btn btn-primary" name="button" id="savesetting">Apply </button>
+        <button class="btn" name="button" id="closesetting">Close</button>
       </div>
 
     </div>

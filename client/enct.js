@@ -2171,16 +2171,16 @@ removeSessionPassword();
 
 function checkRefresh(){
 
-
+     userEncryptionKey  = sessionStorage.getItem('userKey');
   if (sessionStorage.clickcount) {
 
-   userEncryptionKey  = sessionStorage.getItem('userKey');
+alert("if")
 
     var db = getUserDatabaseObject(sessionStorage.getItem('databaseName'));
 
 
 
-    setDefaultSetting();
+    //setDefaultSetting();
 
     setUserProfile();
 
@@ -3487,15 +3487,19 @@ document.getElementById("usertable").innerHTML="";
 
     $('#settingmodal').modal('show');
 
-        // userSettingWindow();
+
+$(document).on('click','.modal-footer #savesetting',function(){
+
+
+userSettingWindow();
 
 
 
 
-    }
+    });
 
 
-
+}
 
 
 
@@ -3665,6 +3669,115 @@ document.getElementById("usertable").innerHTML="";
 function userSettingWindow(){
 
 
+  var settingField = ["Name", "Password","Website","Hint"];
+  var settingFieldId = ["Display", "Mandatory","Encryption"];
+  var settingOption = ["","YYYY/MM/DD","MM/DD/YYYY","DD/MM/YYYY"];
+
+
+var userSettingObject = document.getElementById('usersettingtable');
+var settingObj = [];
+var settingObject = {};
+var settingObjectKey = {};
+
+
+//console.log(userSettingObject.rows[1].cells[1].getElementsByTagName('input')[0].checked);
+//console.log(userSettingObject.rows[1].cells[2]);
+//console.log(userSettingObject.rows[1].cells[3]);
+
+for(var items = 1;items <= settingField.length ;items++){
+
+  settingObj[items-1] = [] ;
+
+for (var indexCheckbox=1 ; indexCheckbox <= settingFieldId.length; indexCheckbox++) {
+
+
+          if(userSettingObject.rows[items].cells[indexCheckbox].getElementsByTagName("input")[0].checked){
+
+
+                  //settingObj[items-1][indexCheckbox-1] =true;             //settingObj[settingFieldId[items-1]][settingField[indexCheckbox-1]] = true ;
+                //  settingObj[settingField[indexCheckbox-1]] = true ;
+                  //settingObject[settingFieldId[items-1]] =  settingObj;
+
+                  settingObj[items-1][indexCheckbox-1] = true ;
+
+
+
+             }
+
+
+             else{
+
+               //settingObj[items-1][indexCheckbox-1] =false;             //settingObj[settingFieldId[items-1]][settingField[indexCheckbox-1]] = true ;
+
+              // settingObject[settingFieldId[items-1]]
+               //[settingField[indexCheckbox-1]] = false ;
+               settingObj[items-1][indexCheckbox-1] = false ;
+
+               //settingObj[settingField[indexCheckbox-1]] = false ;
+               //settingObject[settingFieldId[items-1]] =  settingObj
+
+             }
+
+
+
+
+
+          }
+
+  //console.log(userSettingObject.rows[items].cells[i].getElementsByTagName('input')[0].checked);
+
+
+}
+
+
+//console.log(settingObj)
+console.log(settingObj)
+
+if(validateSelectedCheckbox(settingObj)){
+
+ addUserSetting(settingObj,'DD/MM/YYYY',5);
+    applyCheckboxSetting(settingObj)
+}
+/*
+for (var i = 0; i < settingField.length; i++) {
+console.log("pass"+i)
+
+  for (var j = 0; j < settingFieldId.length; j++) {
+  //  console.log("set value"+settingObj[i][j])
+  //  settingObjectKey =  new Object();
+    settingObjectKey[settingFieldId[j]] = settingObj[i][j] ;
+console.log(settingObjectKey);
+console.log("Data object")
+      settingObject[settingField[i]].push(settingObjectKey);
+
+
+  }
+  //settingObject[settingFieldId[i]] =  settingObjectKey;
+
+}
+console.log(settingObject);
+
+
+
+for (var i = 0; i < settingFieldId.length; i++) {
+//console.log("pass"+i)
+
+  for (var j = 0; j < settingField.length; j++) {
+//    console.log("set value"+settingObjectKey[i][j])
+
+    settingObject[settingField[i]] = settingObjectKey[i][j] ;
+
+    //settingObject[settingFieldId[i]] =  settingObjectKey;
+
+  }
+  //settingObject[settingFieldId[i]] =  settingObjectKey;
+
+}
+console.log(settingObject)
+//console.log(userSettingObject.rows[0].cells[1].getElementsByTagName("input")[1])
+
+
+
 
      var settingDiv,settingField,settingData, settingOption, settingFieldId, settingPopUp,settingData,settingCheckbox ,settingTable,settingRow, settingColumn,save,cancel;
      var  setDateFormat,selectDateFormat,settingDropDownList,selectPagination;
@@ -3676,11 +3789,11 @@ function userSettingWindow(){
      settingDropDownList = document.getElementById('editwindow');
 
 
-     /*
+
        settingField = getSettingFieldId();
      settingFieldId =  getSettingFieldActivityId();
 
-     */
+
 
 
 
@@ -3801,7 +3914,7 @@ function userSettingWindow(){
 
 
 
-          */
+
 
 
 
@@ -3941,7 +4054,7 @@ displayPreviousSetting(settingTable, settingDiv,settingPopUp,selectDateFormat,se
 
 
 
-
+*/
 
 }
 
@@ -3956,14 +4069,15 @@ displayPreviousSetting(settingTable, settingDiv,settingPopUp,selectDateFormat,se
 
       var count = 0 ;
       var  uncheckedFields = [];
-
+      console.log(userCheckboxInput);
+      console.log(userCheckboxInput.length)
       for(var rowCount = 0 ;  rowCount  < userCheckboxInput.length ; rowCount++){
 
 
-          if(userCheckboxInput[rowCount][0]){
+          if(userCheckboxInput[rowCount][0] ){
 
 
-
+                  //console.log("case with colum "+0)
 
           }
 
@@ -3971,7 +4085,7 @@ displayPreviousSetting(settingTable, settingDiv,settingPopUp,selectDateFormat,se
 
             var userInput = validateCheckbox(userCheckboxInput[rowCount][1],userCheckboxInput[rowCount][2])
 
-
+              //console.log("case with colum"+1)
 
                         switch( userInput){
 
@@ -4020,7 +4134,7 @@ displayPreviousSetting(settingTable, settingDiv,settingPopUp,selectDateFormat,se
 }
 
 
-      if(count > 0){
+      if(count){
 
 
         alert("Please Select Display Option For " + uncheckedFields.join());
@@ -4724,7 +4838,7 @@ userRecords.push(userCheckboxValue);
 
 function applyCheckboxSetting(userCheckboxSetting){
 
-   var settingField = ["Name", "Password","Website","Hint"];
+   var settingField = ["userid", "userpassword","userwebsite","userhint"];
 
     var count = 0;
     var uncheckedFields = [];
@@ -4750,6 +4864,9 @@ function applyCheckboxSetting(userCheckboxSetting){
               else{
 
                       document.getElementById(getTextboxId(rowcount)).style.display = "none";
+
+                      document.getElementsByTagName('label')[0].style.display = "none";
+
 
 
                     userInput = validateCheckbox(userCheckboxSetting[rowcount][1],userCheckboxSetting[rowcount][2])
@@ -4883,25 +5000,24 @@ function validateCheckbox(mandatory,encryption){
 function setCurrentSetting(){
 
          var rowCount;
-
+           var userCheckboxSetting = [];
   var db = getUserDatabaseObject(sessionStorage.getItem('databaseName'));
 
 
     db.executeSql("select * from setting").then(function(data){
 
-       if(data["checkbox"] !== undefined){
+
+   userCheckboxSetting = data['checkbox'];
+   console.log(userCheckboxSetting)
+
+  if(userCheckboxSetting){
 
          var userCheckboxSetting = data["checkbox"];
 
              applyCheckboxSetting(userCheckboxSetting)
        }
 
-       else{
-
-             setDefaultSetting();
-
-
-       }
+      console.log(userCheckboxSetting)
 
 
     });
@@ -5371,7 +5487,7 @@ function enterUserRecords(){
 
                 var userInput = validateCheckbox(record[rowCount][1],record[rowCount][2])
 
-
+                            //console.log(user)
 
                         switch( userInput){
 
@@ -5944,7 +6060,7 @@ function setUserProfile(){
                     console.log(decryptedUserData)
 
                      setRightDiv(decryptedUserData.fullname);
-
+                     setCurrentSetting();
                       loadRemoteStorageData();
 
                       break;
