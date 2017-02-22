@@ -2174,13 +2174,13 @@ function checkRefresh(){
      userEncryptionKey  = sessionStorage.getItem('userKey');
   if (sessionStorage.clickcount) {
 
-alert("if")
+
 
     var db = getUserDatabaseObject(sessionStorage.getItem('databaseName'));
 
 
 
-    //setDefaultSetting();
+    setDefaultSetting();
 
     setUserProfile();
 
