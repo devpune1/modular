@@ -587,11 +587,12 @@ background:lightblue;
    }
 
 
-
+/*
+usericon
+*/
 .usericon{
 
-     width:20px;
-    height:20px;
+
      background: url('images/usericon.png') center no-repeat;
 
 
