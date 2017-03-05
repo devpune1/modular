@@ -1,4 +1,4 @@
-
+/*
 (function() {
   'use strict';
 
@@ -83,3 +83,127 @@ return {
 }
 //.init();
 }());
+*/
+
+
+
+/******************** Revealing module pattern ******************/
+
+
+
+/*** Authentication module.***/
+/******************** User module *************/
+
+var userModule = (function() {
+
+function clearTextbox(){
+
+  document.getElementById('userid').value ="";
+  document.getElementById('userpassword').value="";
+
+}
+
+
+function getUserCredentials(){
+
+  console.log("asd");
+
+  var userCredentialObject = {
+
+    "userid": document.getElementById('userid').value,
+
+    "userpassword" : document.getElementById('userpassword').value
+
+
+
+  };
+  console.log(userCredentialObject);
+
+    return userCredentialObject;
+  }
+//alert(userCredentialObject.getUserData());
+
+
+
+return {
+
+
+  getUserData : getUserCredentials,
+  clearText : clearTextbox
+};
+
+}());
+
+//console.log(userModule.getUserData());
+
+
+var authenticationModule = (function() {
+
+  var submitButton = document.getElementById('submit');
+/*** Validate credentials **/
+
+function validateCredentials(){
+
+var userCredential = userModule.
+getUserData();
+
+if(userCredential.userid === "asd" && userCredential.usepassword === "asdasd" ){
+
+
+  console.log("login")
+}
+else{
+
+customAlertModule.customAlert(" user id or password do not match")
+  console.log("not valid user");
+}
+userModule.clearText();
+
+
+}
+
+
+  function setEvent(){
+
+
+    submitButton.onclick =  authenticationModule.validate;
+
+
+  }
+
+
+
+
+
+return {
+
+  validate : validateCredentials,
+  loginButton : setEvent
+
+}
+
+}());
+/********************* Custom alert module  ******************/
+var customAlertModule = (function() {
+
+  'use strict';
+
+// This function display Custom alert
+  function customAlert(msg){
+
+// alert user.
+
+    alert(msg);
+
+  }
+
+// Return function.
+
+return{
+
+  customAlert : customAlert
+}
+
+
+}());
+authenticationModule.loginButton();

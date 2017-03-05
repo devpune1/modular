@@ -87,7 +87,7 @@ return {
 
 })();
 
-
+/**asdasd asdasdads*/
 var EventBus = {
   topics: {},
 
@@ -115,7 +115,7 @@ var EventBus = {
 
 var textID = (function(){
 
-//// moduler
+//// moduler asdasdasd
       var textBoxID =["name","address","email","mobile","birthdate","qualification","password"];
 
 
