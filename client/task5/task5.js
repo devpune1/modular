@@ -89,7 +89,13 @@ return {
 
 /******************** Revealing module pattern ******************/
 
+(function() {
+  'use strict';
 
+$('myform').validator();
+
+
+}());
 
 /*** Authentication module.***/
 /******************** User module *************/
@@ -178,7 +184,7 @@ userModule.clearText();
 return {
 
   validate : validateCredentials,
-  loginButton : setEvent
+  initialize : setEvent
 
 }
 
@@ -206,4 +212,7 @@ return{
 
 
 }());
-authenticationModule.loginButton();
+
+console.log("Initializing module");
+
+authenticationModule.initialize();

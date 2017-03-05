@@ -152,6 +152,8 @@ var userDetails = (function(){
 /* Fetch user enter data from textbox and store into array*/
 
 function  addUserData(){
+
+
   $('#myForm').validator()
 var userData = fetchData(textBoxID );
 
