@@ -140,18 +140,20 @@ return {
 
 }());
 
-//console.log(userModule.getUserData());
+// console.log(userModule.getUserData());
 
 
 var authenticationModule = (function() {
 
   var submitButton = document.getElementById('submit');
+
+
 /*** Validate credentials **/
 
 function validateCredentials(){
 
-var userCredential = userModule.
-getUserData();
+var userCredential = userModule.getUserData();
+
 
 if(userCredential.userid === "asd" && userCredential.usepassword === "asdasd" ){
 
@@ -171,8 +173,8 @@ userModule.clearText();
 
   function setEvent(){
 
-
-    submitButton.onclick =  authenticationModule.validate;
+console.log(submitButton)
+submitButton.onclick =  authenticationModule.validate;
 
 
   }

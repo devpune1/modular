@@ -7,11 +7,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../client/validator.js"></script>
+
+
 </head>
 <body >
 
 
-<div class="container">
+<div class="container" data-toggle="validator">
 
   <div class="jumbotron ">
     <h1>Login</h1>
@@ -21,24 +24,25 @@
 
     <div class="col-md-4 col-md-offset-4">
 
-<form  id = "myform" class="form-horizontal" action="index.html" method="post">
+<form  action="index.html" method="post" id="myform">
 
       <div class="form-group">
         <label for="">Name </label>
-        <input type="text" data-toggle ="tooltip" data-placement= "right" title="Enter user id here" class="form-control" placeholder="Enter Email">
+        <input type="text" class="form-control" data-error="Pls enter value" id="userid" placeholder="Enter Email"
+></input>
+<div class="help-block with-errors">
 
+</div>
       </div>
 
       <div class="form-group">
         <label for="">Password</label>
 
-        <input type="password" class="form-control" placeholder="Enter password">
+        <input type="text" class="form-control" id ="userpassword" placeholder="Enter password">
 
       </div>
-
-
       <div class="form-group">
-          <button type="button" class="btn btn-primary" name="button">Login</button>
+          <button type="button" id="submit"  class="btn btn-primary" name="button">Login</button>
 
 
           <button type="button" class="btn btn-default" name="button">Close</button>
@@ -49,8 +53,7 @@
 </div>
 </div>
 </div>
-
-<script type="text/javascript" src="task5/task5.js">
+<script type="text/javascript" src="../client/task5/task5.js">
 
 </script>
     </body>
