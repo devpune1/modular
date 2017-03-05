@@ -115,7 +115,7 @@ var EventBus = {
 
 var textID = (function(){
 
-
+//// moduler
       var textBoxID =["name","address","email","mobile","birthdate","qualification","password"];
 
 
