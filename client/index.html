@@ -1,60 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../client/validator.js"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../client/validator.js"></script>
+
+    <meta charset="utf-8">
+    <title>My Store</title>
+
+    <div class="form-group">
+    </div>
+  </head>
+  <body>
+<div class="jumbotron">
+  <div class="container-fluid">
+    <div class="row">
+        <form class="form-vertical" action="index.html" method="post">
+          <div class="col-md-12">
 
 
-</head>
-<body >
+            <div class="form-group">
+              <label for="">Name :</label>
+              <input type="text" class="form-control" id="username" name="name" value="" placeholder="Enter user full name" required="">
+              <span  style="color:red"></span>
+
+            </div>
+            <div class="form-group">
+              <label for="">Age:</label>
+              <input type="text" class="form-control" id ="userage" name="name" value="" placeholder="Enter user age" required>
+              <span  style="color:red"></span>
+
+            </div>
 
 
-<div class="container" data-toggle="validator">
+          <div class="form-group center-block" >
 
-  <div class="jumbotron ">
-    <h1>Login</h1>
-    <p></p>
 
-  <div class="row">
+              <button type="button" id="submit" class=" form-control   center-block btn-primary" name="button">Register</button>
 
-    <div class="col-md-4 col-md-offset-4">
 
-<form  action="index.html" method="post" id="myform">
+            </div>
+            <div class="form-group center-block" >
+              <button type="button" id="close" class=" form-control  center-block btn-primary" name="button">Close</button>
 
-      <div class="form-group">
-        <label for="">Name </label>
-        <input type="text" class="form-control" data-error="Pls enter value" id="userid" placeholder="Enter Email"
-></input>
-<div class="help-block with-errors">
+                </div>
 
-</div>
+              </div>
+
+        </form>
       </div>
 
-      <div class="form-group">
-        <label for="">Password</label>
-
-        <input type="text" class="form-control" id ="userpassword" placeholder="Enter password">
-
-      </div>
-      <div class="form-group">
-          <button type="button" id="submit"  class="btn btn-primary" name="button">Login</button>
-
-
-          <button type="button" class="btn btn-default" name="button">Close</button>
-      </div>
-    </form>
+    </div>
 
   </div>
-</div>
-</div>
-</div>
-<script type="text/javascript" src="../client/task5/task5.js">
 
-</script>
-    </body>
+
+   <div class="jumbotron">
+
+     <label for="" >No of Customer Added :  <div style="display:inline"id="totalcustomer"></div></label>
+
+    <h3>New Customer Added :</h3>
+    <p></p>
+    <div class="text-center">
+
+      <p id="status">
+
+      </p>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="../client/task6/task6.js"></script>
+
+  </body>
 </html>
